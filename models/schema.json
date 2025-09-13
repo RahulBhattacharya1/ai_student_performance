@@ -1,0 +1,42 @@
+{
+  "task": "regression",
+  "target": "total_score",
+  "categorical": {
+    "grade": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ]
+  },
+  "numeric_ranges": {
+    "student_id": {
+      "min": 1.0,
+      "max": 1000000.0,
+      "median": 500000.5
+    },
+    "weekly_self_study_hours": {
+      "min": 0.0,
+      "max": 40.0,
+      "median": 15.0
+    },
+    "attendance_percentage": {
+      "min": 50.0,
+      "max": 100.0,
+      "median": 85.0
+    },
+    "class_participation": {
+      "min": 0.0,
+      "max": 10.0,
+      "median": 6.0
+    }
+  },
+  "feature_order": [
+    "grade",
+    "student_id",
+    "weekly_self_study_hours",
+    "attendance_percentage",
+    "class_participation"
+  ]
+}
